@@ -15,12 +15,16 @@ npm install --save react-novice-button
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-novice-button'
+import Button from 'react-novice-button'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+        <Button primary>click me</Button>
+        <Button default>click me</Button>
+        <Button danger >click me</Button>
+        <Button warning>click me</Button>
+        <Button success >click me</Button>
     )
   }
 }
