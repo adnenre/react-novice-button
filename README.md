@@ -86,10 +86,10 @@ class Example extends Component {
   }
 }
 ```
-## Button outline
+## Button outline pill
 
 <p align="center">
-  <img width="600" src="https://raw.githubusercontent.com/adnenre/react-novice-button/master/prev/button-rounded.gif">
+  <img width="600" src="https://raw.githubusercontent.com/adnenre/react-novice-button/master/prev/button-outline.gif">
 </p>
 
 ### Code
@@ -103,13 +103,13 @@ class Example extends Component {
   render () {
     return (
       <div>
-        <h1>Button rounded Component</h1>
-          <Button outline rounded primary>Primary</Button>
-          <Button outline rounded info>Info</Button>
-          <Button outline rounded danger >Danger</Button>
-          <Button outline rounded warning>Warning</Button>
-          <Button outline rounded success >Success</Button>
-          <Button outline rounded black> black</Button>
+        <h1>Button pill Component</h1>
+          <Button outline pill primary>Primary</Button>
+          <Button outline pill info>Info</Button>
+          <Button outline pill danger >Danger</Button>
+          <Button outline pill warning>Warning</Button>
+          <Button outline pill success >Success</Button>
+          <Button outline pill black> black</Button>
       </div>
     )
   }
