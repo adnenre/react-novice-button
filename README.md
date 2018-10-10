@@ -50,21 +50,21 @@ class Example extends Component {
         </div>
         <div className="portlet">
         <h1>Button rounded Component</h1>
-          <Button rounded primary>Primary</Button >
-          <Button rounded info>Info</Button >
-          <Button rounded danger >Danger</Button >
-          <Button rounded warning>Warning</Button >
-          <Button rounded success >Success</Button >
-          <Button rounded black> black</Button >
+          <Button rounded primary>Primary</Button>
+          <Button rounded info>Info</Button>
+          <Button rounded danger >Danger</Button>
+          <Button rounded warning>Warning</Button>
+          <Button rounded success >Success</Button>
+          <Button rounded black> black</Button>
         </div>
         <div className="portlet">
         <h1>Button pill Component</h1>
-          <Button pill primary>Primary</Button >
-          <Button pill info>Info</Button >
-          <Button pill danger >Danger</Button >
-          <Button pill warning>Warning</Button >
-          <Button pill success >Success</Button >
-          <Button pill black> black</Button >
+          <Button pill primary>Primary</Button>
+          <Button pill info>Info</Button>
+          <Button pill danger >Danger</Button>
+          <Button pill warning>Warning</Button>
+          <Button pill success >Success</Button>
+          <Button pill black> black</Button>
         </div>
         <div className="portlet">
         <h1>Button Component fullwidth</h1>
