@@ -6,7 +6,10 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://react.dev" target="_blank">
+        <a
+          href="https://www.npmjs.com/package/react-novice-button"
+          target="_blank"
+        >
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
@@ -38,8 +41,8 @@ function App() {
         <Button $variant="info">info</Button>
       </div>
 
-      <h3>Button size</h3>
       <div className="card">
+        <h3>Button size</h3>
         <Button $variant="primary" $size="xs">
           primary
         </Button>
@@ -61,6 +64,7 @@ function App() {
         </Button>
       </div>
       <div className="card">
+        <h3>Button all variant</h3>
         <Button $variant="primary" $size="md">
           primary
         </Button>
@@ -81,27 +85,74 @@ function App() {
         </Button>
       </div>
       <div className="card">
-        <Button $variant="primary" $size="lg">
-          primary
+        <p>p1 as primary1</p>
+        <Button style={{ color: "#000000" }} $variant="primary1" $size="md">
+          p1
         </Button>
-        <Button $variant="secondary" $size="lg">
-          secondary
+        <Button style={{ color: "#000000" }} $variant="primary2" $size="md">
+          p2
         </Button>
-        <Button $variant="danger" $size="lg">
-          danger
+        <Button style={{ color: "#000000" }} $variant="primary3" $size="md">
+          p3
         </Button>
-        <Button $variant="warning" $size="lg">
-          warning
+        <Button $variant="primary4" $size="md">
+          p4
         </Button>
-        <Button $variant="black" $size="lg">
-          black
+        <Button $variant="primary5" $size="md">
+          p5
         </Button>
-        <Button $variant="info" $size="lg">
-          info
+        <Button $variant="primary6" $size="md">
+          p6
+        </Button>
+        <Button $variant="primary7" $size="md">
+          p7
+        </Button>
+        <Button $variant="primary8" $size="md">
+          p8
+        </Button>
+        <Button $variant="primary9" $size="md">
+          p9
+        </Button>
+        <Button $variant="primary10" $size="md">
+          p5
         </Button>
       </div>
-
-      <p className="read-the-docs">Click on the React logos to learn more</p>
+      <div className="card">
+        <p>s1 as success1</p>
+        <Button style={{ color: "#000000" }} $variant="success1" $size="md">
+          s1
+        </Button>
+        <Button style={{ color: "#000000" }} $variant="success2" $size="md">
+          s2
+        </Button>
+        <Button style={{ color: "#000000" }} $variant="success3" $size="md">
+          s3
+        </Button>
+        <Button $variant="success4" $size="md">
+          s4
+        </Button>
+        <Button $variant="success5" $size="md">
+          s5
+        </Button>
+        <Button $variant="success6" $size="md">
+          s6
+        </Button>
+        <Button $variant="success7" $size="md">
+          s7
+        </Button>
+        <Button $variant="success8" $size="md">
+          s8
+        </Button>
+        <Button $variant="success9" $size="md">
+          s9
+        </Button>
+        <Button $variant="success10" $size="md">
+          s5
+        </Button>
+      </div>
+      <p className="read-the-docs">
+        Click on the React logos to find the package on npmjs and learn more
+      </p>
     </>
   );
 }

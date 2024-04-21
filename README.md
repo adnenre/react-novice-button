@@ -1,8 +1,8 @@
 # react-novice-button
 
-> react button using styled-component [demo](https://codesandbox.io/s/kkrokzn7w5)
+> react button using styled-component [repo demo](https://github.com/adnenre/my-vite-app-test)
 
-[Home page](https://adnenre.github.io/react-novice-button/)
+[Home page](https://adnenre.github.io/my-vite-app-test/)
 
 [![NPM](https://img.shields.io/npm/v/react-novice-button.svg)](https://www.npmjs.com/package/react-novice-button) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 

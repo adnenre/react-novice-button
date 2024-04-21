@@ -1,6 +1,3 @@
-import { css } from "styled-components";
-import theme from "../../theme";
-
 export const setTranspancy = (
   hexColor: string,
   transparancyAmmount: number
