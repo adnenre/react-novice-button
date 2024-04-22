@@ -60,8 +60,8 @@ const theme = {
   },
 
   font$size: {
-    xs: "10px",
-    sm: "12px",
+    xs: "12px",
+    sm: "14px",
     md: "16px",
     lg: "24px",
     xl: "28px",

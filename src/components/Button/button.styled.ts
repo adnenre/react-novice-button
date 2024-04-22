@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { setDarkness, setTranspancy } from "./utils";
 
 export type Button$variant = keyof typeof theme.background;
-export type Button$size = keyof typeof theme.font$size;
+export type Button$size = keyof typeof theme.fontsize;
 
 export type Button$shape = keyof typeof theme.radius;
 export interface ButtonProps
@@ -47,15 +47,15 @@ const SButton = styled.button<ButtonProps>`
   }}
 
   ${({ $size }) => {
-    if ($size && theme.font$size[$size]) {
+    if ($size && theme.fontsize[$size]) {
       if ($size === "xs") {
         return `padding:4px 8px;
-        font-size: ${theme.font$size[$size]}; `;
+        font-size: ${theme.fontsize[$size]}; `;
       } else if ($size === "sm") {
         return `padding:6px 14px;
-          font-size: ${theme.font$size[$size]}; `;
+          font-size: ${theme.fontsize[$size]}; `;
       } else {
-        return `font-size: ${theme.font$size[$size]}; `;
+        return `font-size: ${theme.fontsize[$size]}; `;
       }
     }
   }}
