@@ -1,6 +1,6 @@
 import theme from "../../theme";
 import styled from "styled-components";
-import { setDarkness, setTranspancy } from "./utils";
+import { getContrastColor, setDarkness, setTranspancy } from "./utils";
 
 export type Buttonvariant = keyof typeof theme.background;
 export type Buttonsize = keyof typeof theme.fontsize;
@@ -26,10 +26,11 @@ const SButton = styled.button<ButtonProps>`
     outline: none;
     border-color: transparent;
   }
+
   ${({ $variant }) => {
     if ($variant && theme.background[$variant]) {
       return `background-color: ${theme.background[$variant]}; 
-      color:${theme.color.white};
+      color: ${getContrastColor(theme.background[$variant])};
       &:hover{
         background: ${setDarkness(theme.background[$variant], 0.1)};
         outline:none;
