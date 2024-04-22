@@ -2,15 +2,15 @@ import theme from "../../theme";
 import styled from "styled-components";
 import { setDarkness, setTranspancy } from "./utils";
 
-export type Button$variant = keyof typeof theme.background;
-export type Button$size = keyof typeof theme.fontsize;
+export type Buttonvariant = keyof typeof theme.background;
+export type Buttonsize = keyof typeof theme.fontsize;
 
-export type Button$shape = keyof typeof theme.radius;
+export type Buttonshape = keyof typeof theme.radius;
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  $variant?: Button$variant;
-  $size?: Button$size;
-  $shape?: Button$shape;
+  $variant?: Buttonvariant;
+  $size?: Buttonsize;
+  $shape?: Buttonshape;
 }
 // Define a styled button component
 const SButton = styled.button<ButtonProps>`

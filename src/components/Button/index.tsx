@@ -7,10 +7,4 @@ const Button: React.FC<ButtonProps> = (props): JSX.Element => {
   return <SButton {...rest}>{children}</SButton>;
 };
 
-Button.defaultProps = {
-  $shape: "flat",
-  $variant: "primary",
-  $size: "md", //Todo
-};
-
 export default Button;
