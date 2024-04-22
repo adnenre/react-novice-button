@@ -47,8 +47,17 @@ const SButton = styled.button<ButtonProps>`
   }}
 
   ${({ $size }) => {
-    if ($size && theme.font$size[$size])
-      return `font-size: ${theme.font$size[$size]}; `;
+    if ($size && theme.font$size[$size]) {
+      if ($size === "xs") {
+        return `padding:4px 8px;
+        font-size: ${theme.font$size[$size]}; `;
+      } else if ($size === "sm") {
+        return `padding:6px 14px;
+          font-size: ${theme.font$size[$size]}; `;
+      } else {
+        return `font-size: ${theme.font$size[$size]}; `;
+      }
+    }
   }}
 `;
 
