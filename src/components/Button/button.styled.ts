@@ -11,6 +11,8 @@ export interface ButtonProps
   $variant?: Buttonvariant;
   $size?: Buttonsize;
   $shape?: Buttonshape;
+  $outline?: boolean;
+  $link?: boolean;
 }
 // Define a styled button component
 const SButton = styled.button<ButtonProps>`
@@ -27,9 +29,40 @@ const SButton = styled.button<ButtonProps>`
     border-color: transparent;
   }
 
-  ${({ $variant }) => {
+  ${({ $variant, $outline, $link }) => {
     if ($variant && theme.background[$variant]) {
-      return `background-color: ${theme.background[$variant]}; 
+      if ($link) {
+        return `background-color: ${theme.background.transparent}; 
+        color: ${theme.background[$variant]};
+        border : none;
+        &:hover{
+          color: ${setDarkness(theme.background[$variant], 0.1)};
+          border :none;
+          outline:none;
+        }
+          &:focus{
+          color: ${setTranspancy(theme.background[$variant], 0.8)};
+          border : none;
+          outline:none;
+        }
+        `;
+      } else if ($outline) {
+        return `background-color: ${theme.background.transparent}; 
+      color: ${theme.background[$variant]};
+      border : solid 1px  ${theme.background[$variant]};
+      &:hover{
+        color: ${setDarkness(theme.background[$variant], 0.1)};
+        border : solid 1px   ${setDarkness(theme.background[$variant], 0.1)};
+        outline:none;
+      }
+        &:focus{
+        color: ${setTranspancy(theme.background[$variant], 0.8)};
+        border : solid 1px   ${setDarkness(theme.background[$variant], 0.1)};
+        outline:none;
+      }
+      `;
+      } else {
+        return `background-color: ${theme.background[$variant]}; 
       color: ${getContrastColor(theme.background[$variant])};
       &:hover{
         background: ${setDarkness(theme.background[$variant], 0.1)};
@@ -40,6 +73,7 @@ const SButton = styled.button<ButtonProps>`
         outline:none;
       }
       `;
+      }
     }
   }}
   ${({ $shape }) => {
