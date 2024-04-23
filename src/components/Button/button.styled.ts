@@ -18,12 +18,16 @@ export interface ButtonProps
 const SButton = styled.button<ButtonProps>`
   /* Add your button styles here */
   outline: none !important;
-  border: solid 2px transparent;
+  border: solid 1px transparent;
   padding: 8px 16px;
   border-radius: 0;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
   &:hover {
     outline: none;
     border-color: transparent;
